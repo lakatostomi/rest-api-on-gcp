@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8e1b9d9-4292-4dba-965d-565ffe703f33" name="Changes" comment="WebService is ready">
-      <change afterPath="$PROJECT_DIR$/rest-webservice/src/main/java/org/example/demo/rest/webservice/interceptor/InterceptorConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-webservice/src/main/java/org/example/demo/rest/webservice/interceptor/LoggerInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-webservice/src/main/appengine/app.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file-io/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/file-io/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file-io/src/main/java/org/example/demo/file/io/dao/impl/FileRepositoryJSONImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/file-io/src/main/java/org/example/demo/file/io/dao/impl/FileRepositoryJSONImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file-io/src/main/java/org/example/demo/file/io/dao/impl/FileRepositoryXMLImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/file-io/src/main/java/org/example/demo/file/io/dao/impl/FileRepositoryXMLImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-webservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rest-webservice/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-webservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/rest-webservice/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +89,7 @@
       <workItem from="1693513664087" duration="6000" />
       <workItem from="1693551982923" duration="22498000" />
       <workItem from="1693596521909" duration="2243000" />
-      <workItem from="1693811734108" duration="3587000" />
+      <workItem from="1693811734108" duration="5552000" />
     </task>
     <task id="LOCAL-00001" summary="WebService is ready">
       <created>1693594975007</created>
@@ -106,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693594975008</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="WebService is ready">
+      <created>1693816331716</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1693816331717</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
