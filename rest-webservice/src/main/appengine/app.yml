@@ -4,7 +4,7 @@ runtime_config:
   operating_system: "ubuntu22"
 
 handlers:
-  url: /.*
+ - url: /.*
 
 manual_scaling:
   instances: 1
