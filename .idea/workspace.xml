@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8e1b9d9-4292-4dba-965d-565ffe703f33" name="Changes" comment="WebService is ready">
-      <change afterPath="$PROJECT_DIR$/rest-webservice/src/main/appengine/app.yml" afterDir="false" />
+    <list default="true" id="d8e1b9d9-4292-4dba-965d-565ffe703f33" name="Changes" comment="app.yml updated">
+      <change afterPath="$PROJECT_DIR$/rest-webservice/src/main/appengine/app.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-webservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rest-webservice/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-webservice/src/main/appengine/app.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-webservice/src/main/resources/static/display.html" beforeDir="false" afterPath="$PROJECT_DIR$/rest-webservice/src/main/resources/static/display.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-webservice/src/main/resources/static/display.js" beforeDir="false" afterPath="$PROJECT_DIR$/rest-webservice/src/main/resources/static/display.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,25 +42,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "20",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15429688",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "3726d1deb27c2451ebe95b83bd4a2828"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;20&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15429688&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;3726d1deb27c2451ebe95b83bd4a2828&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="RestWebServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="rest-webservice" />
@@ -89,7 +94,10 @@
       <workItem from="1693513664087" duration="6000" />
       <workItem from="1693551982923" duration="22498000" />
       <workItem from="1693596521909" duration="2243000" />
-      <workItem from="1693811734108" duration="5552000" />
+      <workItem from="1693811734108" duration="11138000" />
+      <workItem from="1693905709900" duration="20851000" />
+      <workItem from="1694112838138" duration="2318000" />
+      <workItem from="1694115890628" duration="4307000" />
     </task>
     <task id="LOCAL-00001" summary="WebService is ready">
       <created>1693594975007</created>
@@ -105,7 +113,21 @@
       <option name="project" value="LOCAL" />
       <updated>1693816331717</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="app.yml added">
+      <created>1693819173867</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1693819173867</updated>
+    </task>
+    <task id="LOCAL-00004" summary="app.yml updated">
+      <created>1693819282683</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1693819282683</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,7 +146,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="WebService is ready" />
-    <option name="LAST_COMMIT_MESSAGE" value="WebService is ready" />
+    <MESSAGE value="app.yml added" />
+    <MESSAGE value="app.yml updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="app.yml updated" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -65,6 +65,11 @@ function createNavItems(linkHeader) {
             enableButton("last")
             lastPageLink = lastLink
         }
+    } else {
+        disableButton("first")
+        disableButton("prev")
+        disableButton("next")
+        disableButton("last")
     }
 }
 
@@ -123,6 +128,10 @@ function createErrorField(errorObject) {
     text += "<tr class='table-danger'><td>" + status + "</td>";
     text += "<tr class='table-danger'><td>" + message + "</td>";
     text += "</table>";
+    disableButton("first")
+    disableButton("prev")
+    disableButton("next")
+    disableButton("last")
     document.getElementById("data").innerHTML = text;
 }
 
