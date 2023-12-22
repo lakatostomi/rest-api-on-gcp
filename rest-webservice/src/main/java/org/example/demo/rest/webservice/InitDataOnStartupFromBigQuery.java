@@ -7,7 +7,9 @@ import org.example.demo.rest.webservice.model.Country;
 import org.example.demo.rest.webservice.repository.CountryRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
@@ -16,13 +18,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class InitDataOnStartup implements CommandLineRunner {
+@ConditionalOnProperty(name = "data.source.isFile", havingValue = "false", matchIfMissing = true)
+public class InitDataOnStartupFromBigQuery implements CommandLineRunner {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(InitDataOnStartup.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(InitDataOnStartupFromBigQuery.class);
     private final CountryRepository countryRepository;
     private final BigQuery bigQuery;
+    @Value( "${spring.cloud.gcp.bigquery.datasetName}")
+    private String dataset;
 
-    public InitDataOnStartup(CountryRepository countryRepository, BigQuery bigQuery) {
+    public InitDataOnStartupFromBigQuery(CountryRepository countryRepository, BigQuery bigQuery) {
         this.countryRepository = countryRepository;
         this.bigQuery = bigQuery;
     }
@@ -30,13 +35,12 @@ public class InitDataOnStartup implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         LOGGER.info("Initializing data has started...");
-        readDataSet();
         countryRepository.saveAllAndFlush(readDataSet());
         LOGGER.info("...data initializing has finished successfully!");
     }
 
     public List<Country> readDataSet() throws InterruptedException {
-        String query = "SELECT * FROM country-population-statistics.country_population.statistics";
+        String query = "SELECT * FROM " + dataset;
         QueryJobConfiguration queryJobConfiguration = QueryJobConfiguration.newBuilder(query).build();
         return convert(bigQuery.query(queryJobConfiguration).iterateAll());
     }

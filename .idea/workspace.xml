@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8e1b9d9-4292-4dba-965d-565ffe703f33" name="Changes" comment="app.yml updated">
-      <change afterPath="$PROJECT_DIR$/rest-webservice/src/main/appengine/app.yaml" afterDir="false" />
+    <list default="true" id="d8e1b9d9-4292-4dba-965d-565ffe703f33" name="Changes" comment="Update README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rest-webservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rest-webservice/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-webservice/src/main/appengine/app.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-webservice/src/main/resources/static/display.html" beforeDir="false" afterPath="$PROJECT_DIR$/rest-webservice/src/main/resources/static/display.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-webservice/src/main/resources/static/display.js" beforeDir="false" afterPath="$PROJECT_DIR$/rest-webservice/src/main/resources/static/display.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,8 +48,9 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;20&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/tommy/IdeaProjects/CountryPopulationStatistics&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15429688&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
@@ -97,7 +93,17 @@
       <workItem from="1693811734108" duration="11138000" />
       <workItem from="1693905709900" duration="20851000" />
       <workItem from="1694112838138" duration="2318000" />
-      <workItem from="1694115890628" duration="4307000" />
+      <workItem from="1694115890628" duration="4399000" />
+      <workItem from="1694720217275" duration="6936000" />
+      <workItem from="1695232835759" duration="2969000" />
+      <workItem from="1696520996087" duration="740000" />
+      <workItem from="1696529208507" duration="18000" />
+      <workItem from="1698784830422" duration="7000" />
+      <workItem from="1702021404062" duration="46000" />
+      <workItem from="1703165920099" duration="6279000" />
+      <workItem from="1703238244972" duration="17457000" />
+      <workItem from="1704040677008" duration="12409000" />
+      <workItem from="1704278317170" duration="5738000" />
     </task>
     <task id="LOCAL-00001" summary="WebService is ready">
       <created>1693594975007</created>
@@ -127,7 +133,49 @@
       <option name="project" value="LOCAL" />
       <updated>1693819282683</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Bugfix and pom.xml plugin update">
+      <created>1694155077496</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1694155077496</updated>
+    </task>
+    <task id="LOCAL-00006" summary="README.md added">
+      <created>1695235748234</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1695235748234</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Code review">
+      <created>1703249046342</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1703249046342</updated>
+    </task>
+    <task id="LOCAL-00008" summary=".gitlab-ci.yml added">
+      <created>1703251270132</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1703251270132</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Update .gitlab-ci.yml, mvnw added">
+      <created>1704101263664</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1704101263664</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Update README.md">
+      <created>1704102114458</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1704102114458</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,7 +196,13 @@
     <MESSAGE value="WebService is ready" />
     <MESSAGE value="app.yml added" />
     <MESSAGE value="app.yml updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="app.yml updated" />
+    <MESSAGE value="Bugfix and pom.xml plugin update" />
+    <MESSAGE value="README.md added" />
+    <MESSAGE value="Code review" />
+    <MESSAGE value=".gitlab-ci.yml added" />
+    <MESSAGE value="Update .gitlab-ci.yml, mvnw added" />
+    <MESSAGE value="Update README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update README.md" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

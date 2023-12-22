@@ -9,7 +9,7 @@ function filterByCode() {
         alert("The code field can not be empty!");
         submitOK = "false";
     } else {
-        let url = "api/rest/countries/code?code=" + code;
+        let url = "api/rest/v1/countries/code?code=" + code;
         createRequest(url, "data")
         document.getElementById("code").value = ""
     }
@@ -21,14 +21,14 @@ function filterByYear() {
         alert("The year field can not be empty!");
         submitOK = "false";
     } else {
-        let url = "api/rest/countries/year?year=" + year;
+        let url = "api/rest/v1/countries/year?year=" + year;
         createRequest(url, "data")
         document.getElementById("year").value = ""
     }
 }
 
 function showAll() {
-    let url = "/api/rest/countries?page=0";
+    let url = "/api/rest/v1/countries?page=0";
     createRequest(url, "data")
 }
 

@@ -19,7 +19,7 @@ import java.time.Year;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/rest/countries")
+@RequestMapping("/api/rest/v1/countries")
 public class CountryController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(CountryController.class);

@@ -22,7 +22,7 @@ public class PaginationDiscoverabilityListener implements ApplicationListener<Pa
 
     private void addLinkHeader(UriComponentsBuilder uriComponentsBuilder, HttpServletResponse servletResponse,
                                int page, int totalPages) {
-        uriComponentsBuilder.path("/api/rest/countries");
+        uriComponentsBuilder.path("/api/rest/v1/countries");
         StringBuffer linkHeader = new StringBuffer();
         linkHeader.append("{");
 

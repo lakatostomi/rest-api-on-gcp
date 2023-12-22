@@ -12,6 +12,7 @@ import org.springframework.stereotype.Component;
 
 import java.io.File;
 import java.net.URI;
+import java.net.URL;
 import java.util.List;
 
 
@@ -32,7 +33,7 @@ public class FileRepositoryJSONImpl implements FileRepository<CountryDTO> {
     public List<CountryDTO> readFile() throws Exception{
         objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
         objectMapper.registerModule(new JavaTimeModule());
-        return objectMapper.readValue(new URI(fileSource).toURL(), new TypeReference<List<CountryDTO>>() {});
+        return objectMapper.readValue(new URL(fileSource), new TypeReference<List<CountryDTO>>() {});
     }
 
 }

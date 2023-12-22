@@ -13,13 +13,15 @@ I used Google's JIB plugin to build and push the image to Google Container Regis
 
 Version 2:
 
-The file input was replaced by BigQuery, I have created a dataset from the .json file and the REST API queries the data on startup. H2 inMemoryDatabase was kept on in order to handle pagination easier. I did not remove the file handler remove...
+The file input was replaced by BigQuery, I have created a dataset from the .json file and the REST API queries the data on startup. H2 inMemoryDatabase was kept on in order to handle pagination easier. I did not remove the file handler module...
 The GCP infrastructure has changed a lot from the previous one:
  - custom VPC and Firewall rules
  - container runs on a VM instance
  - Managed VM Instance Group is created from instance template
  - Global HTTP Load Balancer has implemented
  - Cloud Domain and DNS recordset has been set up
+
+I have configured a pipeline on GitLab that push the image to GCP Container Registry.
 
 The related Terraform code and GitLab CI pipeline configuration is available on GitLab:
 https://gitlab.com/terraform_projects2/web_app_on_gcp

@@ -20,6 +20,10 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.example.demo</groupId>
+            <artifactId>file-io</artifactId>
+        </dependency>
+        <dependency>
             <groupId>com.google.cloud</groupId>
             <artifactId>spring-cloud-gcp-starter-bigquery</artifactId>
         </dependency>
@@ -71,8 +75,17 @@
                 <groupId>com.google.cloud.tools</groupId>
                 <artifactId>jib-maven-plugin</artifactId>
                 <configuration>
+                    <from>
+                        <image>openjdk:17-oracle</image>
+                        <platforms>
+                            <platform>
+                                <architecture>amd64</architecture>
+                                <os>linux</os>
+                            </platform>
+                        </platforms>
+                    </from>
                     <to>
-                        <image>gcr.io/country-population-statistics/${project.name}:${project.version}</image>
+                        <image>eu.gcr.io/ninth-generator-408909/${project.name}:${project.version}</image>
                         <credHelper>gcr</credHelper>
                     </to>
                 </configuration>
@@ -85,14 +98,6 @@
                     </execution>
                 </executions>
             </plugin>
-            <!--<plugin>
-                <groupId>com.google.cloud.tools</groupId>
-                <artifactId>appengine-maven-plugin</artifactId>
-                <configuration>
-                    <deploy.projectId>country-population-statistics</deploy.projectId>
-                    <deploy.version>1</deploy.version>
-                </configuration>
-            </plugin>-->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
