@@ -21,7 +21,9 @@ The GCP infrastructure has changed a lot from the previous one:
  - Global HTTP Load Balancer has implemented
  - Cloud Domain and DNS recordset has been set up
 
-I have configured a pipeline on GitLab that push the image to GCP Container Registry.
+I have configured a pipeline on GitLab that pushes the image to the GCP Container Registry.
+The pipeline runs on the custom image I have built with Dockerfile which can be found in the \pipeline_image folder.
+I have installed Maven and Google Cloud SDK on Linux OS.
 
 The related Terraform code and GitLab CI pipeline configuration is available on GitLab:
 https://gitlab.com/terraform_projects2/web_app_on_gcp

@@ -10,7 +10,7 @@ variables:
   JSON_KEY: $KEY
   ACCOUNT: $SA
 
-image: samybacha/gcloud-maven
+image: lakatostomi/maven-cloudsdk:latest
 
 test:
   stage: test
@@ -21,7 +21,6 @@ build_push:
   stage: build & push
   before_script:
     - gcloud auth activate-service-account $ACCOUNT --key-file=$JSON_KEY
-    - gcloud components install docker-credential-gcr
     - gcloud auth configure-docker eu.gcr.io
   script:
     - mvn clean install -DskipTests
