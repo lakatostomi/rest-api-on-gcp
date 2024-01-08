@@ -85,7 +85,7 @@
                         </platforms>
                     </from>
                     <to>
-                        <image>eu.gcr.io/ninth-generator-408909/${project.name}:${project.version}</image>
+                        <image>europe-west4-docker.pkg.dev/ninth-generator-408909/cp-images/${project.name}:${project.version}</image>
                         <credHelper>gcr</credHelper>
                     </to>
                 </configuration>

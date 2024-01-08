@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8e1b9d9-4292-4dba-965d-565ffe703f33" name="Changes" comment="Update .gitlab-ci.yml">
-      <change afterPath="$PROJECT_DIR$/pipeline_image/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipeline_image/jdk_home.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipeline_image/maven_home.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
+    <list default="true" id="d8e1b9d9-4292-4dba-965d-565ffe703f33" name="Changes" comment="Update .gitlab-ci.yml, README.md, custom pipeline image has built successfully.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-webservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rest-webservice/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +123,9 @@
       <workItem from="1704401227824" duration="1330000" />
       <workItem from="1704482278916" duration="3742000" />
       <workItem from="1704534646492" duration="4652000" />
-      <workItem from="1704552982517" duration="2947000" />
+      <workItem from="1704552982517" duration="3420000" />
+      <workItem from="1704559938205" duration="12000" />
+      <workItem from="1704699859251" duration="2117000" />
     </task>
     <task id="LOCAL-00001" summary="WebService is ready">
       <created>1693594975007</created>
@@ -207,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704294088600</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Update .gitlab-ci.yml, README.md, custom pipeline image has built successfully.">
+      <created>1704556920890</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1704556920890</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +239,8 @@
     <MESSAGE value="Update .gitlab-ci.yml, mvnw added" />
     <MESSAGE value="Update README.md" />
     <MESSAGE value="Update .gitlab-ci.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update .gitlab-ci.yml" />
+    <MESSAGE value="Update .gitlab-ci.yml, README.md, custom pipeline image has built successfully." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update .gitlab-ci.yml, README.md, custom pipeline image has built successfully." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
