@@ -35,7 +35,7 @@ public class InitDataOnStartupFromBigQuery implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         LOGGER.info("Initializing data has started...");
-        countryRepository.saveAllAndFlush(readDataSet());
+        countryRepository.saveAll(readDataSet());
         LOGGER.info("...data initializing has finished successfully!");
     }
 

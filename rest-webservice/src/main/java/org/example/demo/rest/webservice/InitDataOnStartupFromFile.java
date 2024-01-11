@@ -29,7 +29,7 @@ public class InitDataOnStartupFromFile implements CommandLineRunner {
     public void run(String... args) throws Exception {
         LOGGER.info("Initializing data has started...");
         List<Country> countryList = fileRepository.readFile().stream().map(this::convert).toList();
-        countryRepository.saveAllAndFlush(countryList);
+        countryRepository.saveAll(countryList);
         LOGGER.info("...data initializing has finished successfully!");
     }
 
