@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8e1b9d9-4292-4dba-965d-565ffe703f33" name="Changes" comment="gcr replaced by Artifact Registry">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="d8e1b9d9-4292-4dba-965d-565ffe703f33" name="Changes" comment="Logging issue resolved">
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-webservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rest-webservice/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-webservice/src/main/java/org/example/demo/rest/webservice/InitDataOnStartupFromBigQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-webservice/src/main/java/org/example/demo/rest/webservice/InitDataOnStartupFromBigQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-webservice/src/main/java/org/example/demo/rest/webservice/InitDataOnStartupFromFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-webservice/src/main/java/org/example/demo/rest/webservice/InitDataOnStartupFromFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-webservice/src/main/java/org/example/demo/rest/webservice/RestWebServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-webservice/src/main/java/org/example/demo/rest/webservice/RestWebServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-webservice/src/main/java/org/example/demo/rest/webservice/model/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-webservice/src/main/java/org/example/demo/rest/webservice/model/Country.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-webservice/src/main/java/org/example/demo/rest/webservice/repository/CountryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-webservice/src/main/java/org/example/demo/rest/webservice/repository/CountryRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rest-webservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/rest-webservice/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -133,6 +126,7 @@
       <workItem from="1704559938205" duration="12000" />
       <workItem from="1704699859251" duration="2317000" />
       <workItem from="1704786295126" duration="1412000" />
+      <workItem from="1704983581052" duration="371000" />
     </task>
     <task id="LOCAL-00001" summary="WebService is ready">
       <created>1693594975007</created>
@@ -225,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704704411252</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Logging issue resolved">
+      <created>1704983828846</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1704983828847</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,7 +256,8 @@
     <MESSAGE value="Update .gitlab-ci.yml" />
     <MESSAGE value="Update .gitlab-ci.yml, README.md, custom pipeline image has built successfully." />
     <MESSAGE value="gcr replaced by Artifact Registry" />
-    <option name="LAST_COMMIT_MESSAGE" value="gcr replaced by Artifact Registry" />
+    <MESSAGE value="Logging issue resolved" />
+    <option name="LAST_COMMIT_MESSAGE" value="Logging issue resolved" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
