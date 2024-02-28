@@ -9,11 +9,10 @@ import org.springframework.web.servlet.HandlerInterceptor;
 @Component
 public class LoggerInterceptor implements HandlerInterceptor {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(LoggerInterceptor.class);
-
+    private static final Logger log = LoggerFactory.getLogger(LoggerInterceptor.class);
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        LOGGER.info("Request from {} to uri {}", request.getRemoteAddr(), request.getRequestURI());
+        log.info("Request from {} to uri {}", request.getRemoteAddr(), request.getRequestURI());
         return true;
     }
 }

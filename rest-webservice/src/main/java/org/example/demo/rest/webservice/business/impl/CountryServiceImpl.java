@@ -1,5 +1,6 @@
 package org.example.demo.rest.webservice.business.impl;
 
+
 import org.example.demo.rest.webservice.exceptions.ResourceNotFoundException;
 import org.example.demo.rest.webservice.model.Country;
 import org.example.demo.rest.webservice.business.CountryService;
@@ -17,8 +18,7 @@ import java.util.List;
 @Service
 public class CountryServiceImpl implements CountryService<Country> {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(CountryServiceImpl.class);
-
+    private static final Logger log = LoggerFactory.getLogger(CountryServiceImpl.class);
     private final CountryRepository countryRepository;
 
     public CountryServiceImpl(CountryRepository countryRepository) {
@@ -27,7 +27,7 @@ public class CountryServiceImpl implements CountryService<Country> {
 
     @Override
     public Page<Country> findAll(int page, int size) {
-        LOGGER.info("Querying for countries with page {}, size {}", page, size);
+        log.info("Querying for countries with page {}, size {}", page, size);
         Page<Country> countryPage = countryRepository.findAll(PageRequest.of(page, size));
         if (countryPage.isEmpty()) {
             throw new ResourceNotFoundException("No data to display");
@@ -37,7 +37,7 @@ public class CountryServiceImpl implements CountryService<Country> {
 
     @Override
     public List<Country> findByCountryCode(String code) {
-        LOGGER.info("Querying for countries with countryCode {}", code);
+        log.info("Querying for countries with countryCode {}", code);
         List<Country> countryList = countryRepository.findByCountryCodeOrderByYear(code);
         if (countryList.isEmpty()) {
             throw new ResourceNotFoundException("There are no data to display with code: " + code);
@@ -47,7 +47,7 @@ public class CountryServiceImpl implements CountryService<Country> {
 
     @Override
     public List<Country> findByYear(Year year) {
-        LOGGER.info("Querying for countries with year {}", year);
+        log.info("Querying for countries with year {}", year);
         List<Country> countryList = countryRepository.findByYearOrderByCountryName(year);
         if (countryList.isEmpty()) {
             throw new ResourceNotFoundException("There are no data to display with year: " + year);

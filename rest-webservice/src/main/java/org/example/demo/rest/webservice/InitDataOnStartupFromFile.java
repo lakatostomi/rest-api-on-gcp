@@ -15,8 +15,7 @@ import java.util.List;
 @ConditionalOnProperty(name = "data.source.isFile", havingValue = "true")
 public class InitDataOnStartupFromFile implements CommandLineRunner {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(InitDataOnStartupFromFile.class);
-
+    private static final Logger log = LoggerFactory.getLogger(InitDataOnStartupFromFile.class);
     private final FileRepository<CountryDTO> fileRepository;
     private final CountryRepository countryRepository;
 
@@ -27,10 +26,12 @@ public class InitDataOnStartupFromFile implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        LOGGER.info("Initializing data has started...");
+        log.info("Initializing data from file has started...");
         List<Country> countryList = fileRepository.readFile().stream().map(this::convert).toList();
+        log.info(String.valueOf(countryList.size()));
+        countryRepository.deleteAll();
         countryRepository.saveAll(countryList);
-        LOGGER.info("...data initializing has finished successfully!");
+        log.info("...data initializing has finished successfully!");
     }
 
     private Country convert(CountryDTO countryDTO) {

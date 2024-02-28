@@ -1,5 +1,6 @@
 package org.example.demo.rest.webservice.api;
 
+
 import jakarta.servlet.http.HttpServletResponse;
 import org.example.demo.rest.webservice.model.Country;
 import org.example.demo.rest.webservice.business.CountryService;
@@ -22,7 +23,7 @@ import java.util.List;
 @RequestMapping("/api/rest/v1/countries")
 public class CountryController {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(CountryController.class);
+    private static final Logger log = LoggerFactory.getLogger(CountryController.class);
     private final CountryService<Country> countryService;
     private final ApplicationEventPublisher eventPublisher;
 
@@ -58,6 +59,6 @@ public class CountryController {
     }
 
     private void loggingResult(List<Country> countryList) {
-        LOGGER.info("Returning a country list with size={}", countryList.size());
+        log.info("Returning a country list with size={}", countryList.size());
     }
 }

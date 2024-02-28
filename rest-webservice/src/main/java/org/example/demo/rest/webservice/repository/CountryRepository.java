@@ -10,7 +10,7 @@ import java.time.Year;
 import java.util.List;
 
 @Repository
-public interface CountryRepository extends CrudRepository<Country, Integer>, PagingAndSortingRepository<Country, Integer> {
+public interface CountryRepository extends JpaRepository<Country, Integer>, PagingAndSortingRepository<Country, Integer> {
 
     List<Country> findByCountryCodeOrderByYear(String countryCode);
 

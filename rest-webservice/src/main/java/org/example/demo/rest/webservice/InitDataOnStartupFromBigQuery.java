@@ -1,5 +1,8 @@
 package org.example.demo.rest.webservice;
 
+
+
+
 import com.google.cloud.bigquery.BigQuery;
 import com.google.cloud.bigquery.FieldValueList;
 import com.google.cloud.bigquery.QueryJobConfiguration;
@@ -19,9 +22,9 @@ import java.util.List;
 
 @Component
 @ConditionalOnProperty(name = "data.source.isFile", havingValue = "false", matchIfMissing = true)
-public class InitDataOnStartupFromBigQuery implements CommandLineRunner {
+public class InitDataOnStartupFromBigQuery implements CommandLineRunner{
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(InitDataOnStartupFromBigQuery.class);
+    private static final Logger log = LoggerFactory.getLogger(InitDataOnStartupFromBigQuery.class);
     private final CountryRepository countryRepository;
     private final BigQuery bigQuery;
     @Value( "${spring.cloud.gcp.bigquery.datasetName}")
@@ -34,9 +37,9 @@ public class InitDataOnStartupFromBigQuery implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        LOGGER.info("Initializing data has started...");
+        log.info("Initializing data from BigQuery has started...");
         countryRepository.saveAll(readDataSet());
-        LOGGER.info("...data initializing has finished successfully!");
+        log.info("...data initializing has finished successfully!");
     }
 
     public List<Country> readDataSet() throws InterruptedException {

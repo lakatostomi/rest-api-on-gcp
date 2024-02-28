@@ -1,4 +1,7 @@
 <configuration scan="true">
+    <property name="DEV_HOME" value="./rest-webservice/logs"/>
+    <property name="APP_NAME" value="rest-webservice"/>
+
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>%date %yellow([%thread]) %highlight(%-5level) %green(%logger{36}) - %msg%n</pattern>
@@ -6,14 +9,14 @@
     </appender>
 
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>log/logging.log</file>
+        <file>${DEV_HOME}/${APP_NAME}.log</file>
         <append>true</append>
         <encoder>
             <pattern>%date [%-4relative] [%thread] %-5level %logger{35} - %msg%n</pattern>
         </encoder>
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
-            <fileNamePattern>./log/archive/countryPopulation-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
-            <maxFileSize>8MB</maxFileSize>
+            <fileNamePattern>${DEV_HOME}/archive/${APP_NAME}.log-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <maxFileSize>5MB</maxFileSize>
         </rollingPolicy>
     </appender>
 

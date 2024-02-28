@@ -19,33 +19,33 @@ import java.util.Date;
 @ControllerAdvice
 public class RestExceptionHandler {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(RestExceptionHandler.class);
+    private static final Logger log = LoggerFactory.getLogger(RestExceptionHandler.class);
 
     @ExceptionHandler({HttpMessageNotReadableException.class, MissingServletRequestParameterException.class})
     protected ProblemDetail handleClientsBadRequests(Exception ex) {
         ProblemDetail problemDetail = createProblemDetail(HttpStatus.BAD_REQUEST.value(), ex.getMessage());
-        LOGGER.warn(problemDetail.toString());
+        log.warn(problemDetail.toString());
         return problemDetail;
     }
 
     @ExceptionHandler(ResourceNotFoundException.class)
     protected ProblemDetail handleResourceNotFound(ResourceNotFoundException ex) {
         ProblemDetail problemDetail = createProblemDetail(HttpStatus.NOT_FOUND.value(), ex.getMessage());
-        LOGGER.warn(problemDetail.toString());
+        log.warn(problemDetail.toString());
         return problemDetail;
     }
 
     @ExceptionHandler(HttpRequestMethodNotSupportedException.class)
     protected ProblemDetail handleHttpRequestMethodNotSupported(HttpRequestMethodNotSupportedException ex) {
         ProblemDetail problemDetail = createProblemDetail(HttpStatus.METHOD_NOT_ALLOWED.value(), ex.getMessage());
-        LOGGER.warn(problemDetail.toString());
+        log.warn(problemDetail.toString());
         return problemDetail;
     }
 
     @ExceptionHandler(HttpMediaTypeNotSupportedException.class)
     protected ProblemDetail handleHttpMediaTypeNotSupported(HttpMediaTypeNotSupportedException ex) {
         ProblemDetail problemDetail = createProblemDetail(HttpStatus.UNSUPPORTED_MEDIA_TYPE.value(), ex.getMessage());
-        LOGGER.warn(problemDetail.toString());
+        log.warn(problemDetail.toString());
         return problemDetail;
     }
 

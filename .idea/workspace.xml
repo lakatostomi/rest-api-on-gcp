@@ -4,7 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8e1b9d9-4292-4dba-965d-565ffe703f33" name="Changes" comment="Logging issue resolved" />
+    <list default="true" id="d8e1b9d9-4292-4dba-965d-565ffe703f33" name="Changes" comment="Update README.md">
+      <change afterPath="$PROJECT_DIR$/rest-webservice/src/main/java/org/example/demo/rest/webservice/api/RestTemplateController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-webservice/src/main/java/org/example/demo/rest/webservice/dto/ElementAttributeDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-webservice/src/main/java/org/example/demo/rest/webservice/dto/HtmlElementDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-webservice/src/main/resources/application-bigquery.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-webservice/src/main/resources/application-cloudsql.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-webservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rest-webservice/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-webservice/src/main/java/org/example/demo/rest/webservice/InitDataOnStartupFromBigQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-webservice/src/main/java/org/example/demo/rest/webservice/InitDataOnStartupFromBigQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-webservice/src/main/java/org/example/demo/rest/webservice/InitDataOnStartupFromFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-webservice/src/main/java/org/example/demo/rest/webservice/InitDataOnStartupFromFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-webservice/src/main/java/org/example/demo/rest/webservice/RestWebServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-webservice/src/main/java/org/example/demo/rest/webservice/RestWebServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-webservice/src/main/java/org/example/demo/rest/webservice/api/CountryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-webservice/src/main/java/org/example/demo/rest/webservice/api/CountryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-webservice/src/main/java/org/example/demo/rest/webservice/business/impl/CountryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-webservice/src/main/java/org/example/demo/rest/webservice/business/impl/CountryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-webservice/src/main/java/org/example/demo/rest/webservice/errorhandler/RestExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-webservice/src/main/java/org/example/demo/rest/webservice/errorhandler/RestExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-webservice/src/main/java/org/example/demo/rest/webservice/interceptor/LoggerInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-webservice/src/main/java/org/example/demo/rest/webservice/interceptor/LoggerInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-webservice/src/main/java/org/example/demo/rest/webservice/repository/CountryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-webservice/src/main/java/org/example/demo/rest/webservice/repository/CountryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-webservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/rest-webservice/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-webservice/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rest-webservice/src/main/resources/logback.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,8 +37,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Record" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -61,7 +82,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.15429688&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;3726d1deb27c2451ebe95b83bd4a2828&quot;
+    &quot;spring.configuration.checksum&quot;: &quot;21d4f149d507cf108a61dfd7034f385c&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -124,6 +145,13 @@
       <workItem from="1704699859251" duration="2317000" />
       <workItem from="1704786295126" duration="1412000" />
       <workItem from="1704983581052" duration="419000" />
+      <workItem from="1705323086833" duration="336000" />
+      <workItem from="1705575248991" duration="257000" />
+      <workItem from="1706276472721" duration="4857000" />
+      <workItem from="1708171863562" duration="16000" />
+      <workItem from="1708629556551" duration="6033000" />
+      <workItem from="1708678354629" duration="2687000" />
+      <workItem from="1709114909146" duration="5924000" />
     </task>
     <task id="LOCAL-00001" summary="WebService is ready">
       <created>1693594975007</created>
@@ -230,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704983977761</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Update README.md">
+      <created>1705323408069</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1705323408070</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,12 +291,12 @@
     <MESSAGE value="Code review" />
     <MESSAGE value=".gitlab-ci.yml added" />
     <MESSAGE value="Update .gitlab-ci.yml, mvnw added" />
-    <MESSAGE value="Update README.md" />
     <MESSAGE value="Update .gitlab-ci.yml" />
     <MESSAGE value="Update .gitlab-ci.yml, README.md, custom pipeline image has built successfully." />
     <MESSAGE value="gcr replaced by Artifact Registry" />
     <MESSAGE value="Logging issue resolved" />
-    <option name="LAST_COMMIT_MESSAGE" value="Logging issue resolved" />
+    <MESSAGE value="Update README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update README.md" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
